@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF_Exercise_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Exercise_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Name="lbl1" Margin="20" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Button x:Name="btn1" Margin="300 0" Content="Start" Click="btn1_Click" ></Button>
+        <Label Name="lbl2" Margin="20" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Button x:Name="btn2" Margin="300 0" Content="Start" Click="btn2_Click" ></Button>
+        <Label Name="lbl3" Margin="20" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Button x:Name="btn3" Margin="300 0" Content="Start" Click="btn3_Click" ></Button>
+        <Label Name="lbl4" 
+               Content="{Binding MyNumber.NumberValue}"
+               Margin="20" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Button x:Name="btn4" Margin="300 0" Content="Start" Click="btn4_Click" ></Button>
+    </StackPanel>
+</Window>
